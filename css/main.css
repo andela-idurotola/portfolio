@@ -1,0 +1,300 @@
+/************************************
+NEON LIGHTS
+*************************************/
+/*h1 {
+      text-shadow: 0 0 10px #fff,
+                   0 0 20px #fff,
+                   0 0 30px #fff,
+                   0 0 40px #ff00de,
+                   0 0 70px #ff00de,
+                   0 0 80px #ff00de,
+                   0 0 100px #ff00de,
+                   0 0 150px #ff00de;
+}*/
+/************************************
+General
+*************************************/
+
+a {
+	text-decoration: none;
+	color: blue;
+}
+
+#wrapper {
+	clear: both;
+	max-width: 940px;
+	margin: 0 auto;
+	padding: 0 5%;
+}
+
+img {
+	max-width: 100%;
+}
+
+
+body {
+	font-family: "open sans", sans-serif;
+	background: url(../img/BGG1.jpg)  no-repeat;
+	background-size: cover;
+}
+
+h3 {
+	margin:0 0 1em 0;
+}
+
+#portfolio{
+	padding-top: 10%;
+}
+
+#about{
+	clear: both;
+	padding-top: 10%;
+}
+
+#contact{
+	clear: both;
+	padding-top: 20%;
+	display: block;
+}
+
+
+/************************************
+HEADING
+*************************************/
+
+header {
+	position: fixed;
+	z-index: 400;
+	top: 0;
+	float: left;
+	background-color: rgba(0,0,0,.6);
+	border-color: #000;
+	margin: 0 0 30px 0;
+	padding: 1px 0 0 0;
+	width: 100%;
+	border-bottom: 2px solid tomato;
+}
+
+#logo {
+	text-shadow: 0 0 10px #fff,
+                   0 0 20px #fff,
+                   0 0 30px tomato,
+                   0 0 40px #ff00de,
+                   0 0 70px tomato,
+                   0 0 80px #ff00de;
+                 
+}
+
+h1 {
+    font-family: 'open sans',  sans-serif;
+	margin: 1px 0;
+	font-size: 1.75em;
+	font-weight: normal;
+}
+
+h2 {
+    font-family: 'open sans',  sans-serif;
+	font-size: 0.75em;
+	margin: -5px 0 0;
+	font-weight: normal;
+}
+
+
+/************************************
+COLOR
+*************************************/
+
+/* logo text */
+h1, h2 {
+	color: #fff;
+}
+
+/* nav background on mobile*/
+nav {
+	background: #888;
+}
+
+/* nav link */
+nav a, nav a:visited {
+	color: #fff;
+}
+
+/* selected nav linlk */
+nav a.selected, 
+nav a:hover {
+	color: tomato;
+}
+
+nav a:focus {
+		color: tomato;
+
+}
+
+/************************************
+NAVIGATION
+*************************************/
+
+nav {
+	text-align: center;
+	padding: 5px 0;
+	margin: 10px 0 0;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0 10px;
+	padding: 0;
+}
+
+nav li {
+	display: inline-block;
+}
+
+
+nav a {
+    font-family: 'open sans',  sans-serif;
+	font-weight: 600;
+	padding: 10px 5px;
+}
+
+/************************************
+PAGE: PORTFOLIO;
+**********************#f5f5f5***************/
+
+#gallery {
+	margin:0;
+	padding: 0;
+	list-style: none;
+}
+
+#gallery li {
+	float: left;
+/*	width: 45%;
+	margin: 2.5%;*/
+	margin: 10px 10px;
+	color: #bdc3cf;
+	font-style: italic;
+	box-shadow: 0 8px 6px -6px black;
+	-moz-box-shadow: 0 8px 6px -6px black;
+	-webkit-box-shadow: 0 8px 6px -6px black;
+}
+
+#gallery li a p {
+	margin: 0;
+	padding: 4%;
+	font-size: 0.65em;
+	color: white;
+}
+
+.imageBox {
+	width:100%;
+    display:block;
+    position:relative;
+}
+
+DIV.imageBox .overlay {
+    top: 0%;
+    width:100%;
+    height:100%;
+    border-radius: 0 0 10px 10px;
+    display:none;
+    left: 0px;
+	position: absolute;
+	z-index: 1 !important;
+    background-color: rgba(54,50,57,0.8);
+	-webkit-transition: all 2000ms ease-out;
+	-moz-transition: all 2000ms ease-out;
+	-o-transition: all 2000ms ease-out;
+	-ms-transition: all 2000ms ease-out;
+	transition: all 2000ms ease-out;
+}
+
+DIV.imageBox:hover .overlay {
+    display:block;
+}
+
+
+/************************************
+PAGE: ABOUT;
+*************************************/
+.profile-photo {
+	display: block;
+	max-width: 150px;
+	margin: 0 auto 30px;
+	border-radius: 20%;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #999;
+	outline: none;
+	transition: 0.5s ease;
+	-o-transition: 0.5s ease;
+	-webkit-transition: 0.5s ease;
+}
+/************************************
+PAGE: CONTACT;
+*************************************/
+
+.contact-info {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	font-size: 0.9em;
+}
+
+
+.contact-info a {
+	display: block;
+	min-height: 20px;
+	background-repeat: no-repeat;
+	background-size: 20px 20px;
+	margin: 0 0 10px;
+	padding: 0 0 0 30px;
+}
+
+
+.contact-info li.phone a {
+	background-image: url('../img/phone.jpg');
+}
+
+
+.contact-info li.mail a {
+	background-image: url('../img/mail.jpg');
+}
+
+
+.contact-info li.twitter a {
+	background-image: url('../img/tweet.jpg');
+}
+
+
+/************************************
+FOOTER
+*************************************/
+
+footer {
+	clear: both;
+	font-size: 0.75em;
+	background-color: rgba(0,0,0,.6);
+	border-top: 3px solid tomato;
+	position: relative;
+	text-align: center;
+	padding-top: 10px;
+	color: #ccc;
+}
+
+footer p {
+	margin: 0px;
+}
+
+#primary {
+	margin-bottom: 70px;
+}
+
+.social-icon {
+	width: 20px;
+	height: 20px;
+	margin: 0 5px;
+}
+
